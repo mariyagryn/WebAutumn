@@ -10,7 +10,8 @@
 
     <title>Project</title>
 
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="scss/style.css">
 
 </head>
 
@@ -42,7 +43,243 @@
 
     </header>
     <hr>
-</div>
+    <section class="topTeachersContainer">
+        <a href="#teacherInfoPopup">
+            <h2 id="topTeachersText">Top Teachers</h2>
+        </a>
+
+        <section class="filtersContainer">
+            <div>
+                <label for="ageSelect">Age</label>
+                <select name="age" id="ageSelect">
+                    <option value="all">all</option>
+                    <option value="18-31">18-31</option>
+                    <option value="18<"> 18&lt; </option>
+                    <option value=">31"> &gt;31</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="regionSelect">Region</label>
+                <select name="region" id="regionSelect">
+                    <option value="all">all</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Australia">Australia</option>
+                    <option value="United States">United States</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Poland">Poland</option>
+                    <option value="India">India</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="sexSelect">Sex</label>
+                <select name="sex" id="sexSelect">
+                    <option value="all">all</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="checkbox" id="onlyWithPhoto" name="onlyWithPhotoName" />
+                <label for="onlyWithPhoto">Only with photo</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="onlyFavorites" name="onlyFavorites"/>
+                <label for="onlyFavorites">Only favorites</label>
+            </div>
+
+        </section>
+        <br>
+        <section class="teachersCardsContainer" id = "teachersCardsContainer">
+
+            <div class="roundedPhoto">
+                <div class="photo">
+                    <img class="personPhoto" alt="person" src="images\manTeacher.jpg">
+                </div>
+
+                <article>
+                    <p class="nameText">Ihor</p>
+                    <p class="surnameText">Tkachuk</p>
+                    <p class="subjectText">Chemistry</p>
+                    <p class="countryText">Ukraine</p>
+                </article>
+            </div>
+
+            <div class="roundedPhoto">
+                <div class="photo">
+                    <img class="personPhoto" alt="person" src="images\manTeacher1.jpg">
+                </div>
+
+                <article>
+                    <p class="nameText">Pragg</p>
+                    <p class="surnameText">Tkachuk</p>
+                    <p class="subjectText">Chess</p>
+                    <p class="countryText">India</p>
+                </article>
+            </div>
+
+            <div class="roundedPhoto">
+                <div class="photo">
+                    <img class="personPhoto" alt="person" src="images\womanTeacher3.jpg">
+                </div>
+                <img class="star" alt="star" src="images\star.png"></img>
+
+
+                <article>
+                    <p class="nameText">Floor</p>
+                    <p class="surnameText">Jansen</p>
+                    <p class="subjectText">Vocal</p>
+                    <p class="countryText">Denmark</p>
+                </article>
+            </div>
+
+            <div class="roundedPhoto">
+                <div class="photo">
+                    <img class="personPhoto" alt="person" src="images\manTeacher2.jpg">
+                </div>
+
+
+                <article>
+                    <p class="nameText">John</p>
+                    <p class="surnameText">Burke</p>
+                    <p class="subjectText">Computer Science</p>
+                    <p class="countryText">Belgium</p>
+                </article>
+            </div>
+
+            <div class="roundedPhoto">
+                <div class="photo">
+                    <img class="personPhoto" alt="person" src="images\womanTeacher2.jpg">
+                </div>
+                <img class="star" alt="star" src="images\star.png"></img>
+
+
+                <article>
+                    <p class="nameText">Ari</p>
+                    <p class="surnameText">Tang</p>
+                    <p class="subjectText">Biology</p>
+                    <p class="countryText">China</p>
+                </article>
+            </div>
+
+            <div class="roundedPhoto">
+                <div class="photo">
+                    <img class="personPhoto" alt="person" src="images\womanTeacher.jpg">
+                </div>
+
+                <article>
+                    <p class="nameText">Rachel</p>
+                    <p class="surnameText">Andrew</p>
+                    <p class="subjectText">Medicine</p>
+                    <p class="countryText">UK</p>
+                </article>
+            </div>
+
+            <div class="roundedPhoto">
+                <div class="noPhoto">
+                    <p>A.M</p>
+                </div>
+                <article>
+                    <p class="nameText">Anna</p>
+                    <p class="surnameText">Muzuchuk</p>
+                    <p class="subjectText">Chess</p>
+                    <p class="countryText">Belarus</p>
+                </article>
+            </div>
+
+            <div class="roundedPhoto">
+                <div class="noPhoto">
+                    <p>R.L</p>
+                </div>
+                <article>
+                    <p class="nameText">Radoslaw</p>
+                    <p class="surnameText">Ljuboevic</p>
+                    <p class="subjectText">Physics</p>
+                    <p class="countryText">Poland</p>
+                </article>
+            </div>
+
+        </section>
+
+        <hr>
+        <section>
+            <h2 id="statisticsText">Statistics</h2>
+            <table class="statisticsTable" id="statisticsTable">
+                <thead>
+                <tr>
+                    <th>Name
+                        <span class="tableArrow">↓</span>
+                    </th>
+                    <th>Speciality
+                        <span class="tableArrow">↓</span>
+                    </th>
+                    <th>Age
+                        <span class="tableArrow">↓</span>
+                    </th>
+                    <th>Gender
+                        <span class="tableArrow">↓</span>
+                    </th>
+                    <th>Nationality
+                        <span class="tableArrow">↓</span>
+                    </th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+            <nav>
+                <ol class="underTableList">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>...</li>
+                    <li>Last</li>
+                </ol>
+            </nav>
+        </section>
+        <hr/>
+        <section>
+            <h2 id="favoritesText">Favorites</h2>
+            <section id="carouselOfTeacherCards">
+                <div class="arrowButton arrowButtonLeft"><img class="arrowLeft" alt="arrow_left" src="images\angle_left_icon.png"/></div>
+                <div class="arrowButton arrowButtonRight"><img class="arrowRight arrow" alt="arrow_right" src="images\angle_right_icon.png"/></div>
+                <div class="overflow">
+
+                </div>
+            </section>
+        </section>
+        <hr/>
+        <section class="paragraphOfText">
+            <article id="aboutText">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque facere, hic impedit itaque molestiae sit tempore? Ea in mollitia natus rerum voluptatis. Ea ex exceptionuri facere tempora.Aliquid asperiores hic impedit iusto natus quaerat ratione sit? Culpa iusto optio voluptas voluptate. Enim eveniet fugit iure maiores molestiae, praesentium quia.
+
+                <br></br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eligendi illum in inventore ipsum odio officiis omnis quisquam sed tempora?
+                <br></br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque esse expedita id iusto mollitia, odit sint ullam veritatis vero?
+            </article></section>
+        <footer>
+
+            <div class="footerContainer">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#topTeachersText">Teachers</a></li>
+                        <li><a href="#statisticsText">Statistics</a></li>
+                        <li><a href="#favoritesText">Favorites</a></li>
+                        <li><a href="#aboutText">About</a></li>
+                    </ul>
+                </nav>
+                <button class="addTeacherButton button">Add teacher</button>
+            </div>
+        </footer>
 
 <script type="text/javascript" src="../build/app.js"></script>
 

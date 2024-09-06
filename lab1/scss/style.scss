@@ -1,0 +1,116 @@
+* Import fonts */
+@import url('../fonts/Roboto.css');
+
+/* Reset and normalize */
+@import url('../css/normalize.css');
+
+$mainOrange: rgb(238, 92, 75);
+
+* {
+  margin: 0px;
+}
+
+html {
+  font-size: 3vw;
+}
+
+body {
+  font-family: 'Roboto';
+
+}
+
+.bodyDiv {
+  margin: auto;
+  width: 66.6%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+}
+
+.topOfHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 14px 0;
+}
+
+header h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 1px 0 black, -1px -1px 0 red;
+  margin: 0px;
+  padding: 0px;
+}
+
+header h1:hover {
+  color: darkgray;
+
+}
+
+.searchForm {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+
+}
+
+.searchForm:hover {
+  width: 60%;
+}
+
+.inputArea {
+  width: calc(100% - 2.5rem);
+  padding-left: 3%;
+  font-size: 0.4rem;
+  border: solid 1px darkgray;
+  height: 1.2rem;
+}
+
+.button {
+  background: white;
+  font-weight: 550;
+  border: solid 1px $mainOrange;
+  color: $mainOrange;
+}
+
+.searchButton {
+  margin-left: 10px;
+  width: 2, 5rem;
+  font-size: 0.5rem;
+  height: 1.2rem;
+}
+
+.searchButton:hover {
+  color: white;
+  background-color: $mainOrange;
+}
+
+
+.addTeacherButton a {
+  text-decoration: none;
+  color: $mainOrange;
+}
+
+.bottomOfHeader {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  align-items: center;
+  justify-content: space-between;
+
+}
