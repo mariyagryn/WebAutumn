@@ -17,6 +17,7 @@
 
 <body itemscope itemtype="http://schema.org/WebPage">
 <div class="bodyDiv">
+    <div class="form-overlay" id="formOverlay" onclick="closeAddTeacherPopup()"></div>
     <header>
         <div class="topOfHeader">
             <h1>Teachinder</h1>
@@ -36,12 +37,86 @@
                     <li><a href="#aboutText">About</a></li>
                 </ul>
             </nav>
-            <button class="addTeacherButton button">
-                <a href="#addTeacherPopupBack">Add teacher</a>
+            <button class="addTeacherButton button" onclick="openAddTeacherPopup()">
+                Add teacher
             </button>
         </div>
 
     </header>
+    <div class="form-container" id="addTeacherPopup">
+        <div class="form-header">
+            <h2>Add Teacher</h2>
+            <span class="close-btn" onclick="closeAddTeacherPopup()">&times;</span>
+        </div>
+        <form action="#" method="post">
+            <!-- Your form fields here -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter name" required>
+
+            <label for="speciality">Speciality</label>
+            <select id="speciality" name="speciality">
+                <option value="mathematics">Mathematics</option>
+                <option value="computerscience">Computer Science</option>
+                <option value="physics">Physics</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="biology">Biology</option>
+            </select>
+
+            <div class="row">
+                <div class="column">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="ukraine">Ukraine</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Australia">Australia</option>
+                        <option value="United States">United States</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Finland">Finland</option>
+                        <option value="UK">UK</option>
+                        <option value="Poland">Poland</option>
+                        <option value="India">India</option>
+                    </select>
+                </div>
+
+                <div class="column">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="">
+                </div>
+
+                <div class="column">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="">
+                </div>
+            </div>
+
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" name="dob">
+
+            <div class="radio-group">
+                <label>Sex</label>
+                <label><input type="radio" name="sex" value="male"> Male</label>
+                <label><input type="radio" name="sex" value="female"> Female</label>
+            </div>
+
+            <div class="background-color-group">
+                <label for="bg-color">Background color</label>
+                <input type="color" id="bg-color" name="bg-color">
+            </div>
+
+            <label for="notes">Notes (optional)</label>
+            <textarea id="notes" name="notes" placeholder="Enter notes"></textarea>
+
+            <button type="submit" class="addTeacherButton2 button">Add</button>
+        </form>
+    </div>
     <hr>
     <section class="topTeachersContainer">
         <a href="#teacherInfoPopup">
@@ -318,13 +393,18 @@
         <section>
             <h2 id="favoritesText">Favorites</h2>
             <section id="carouselOfTeacherCards">
-                <div class="arrowButton arrowButtonLeft"><img class="arrowLeft" alt="arrow_left" src="images\angle_left_icon.png"/></div>
-                <div class="arrowButton arrowButtonRight"><img class="arrowRight arrow" alt="arrow_right" src="images\angle_right_icon.png"/></div>
+                <div class="arrowButton arrowButtonLeft">
+                    <img class="arrowLeft" alt="arrow_left" src="images/angle_left_icon.png"/>
+                </div>
                 <div class="overflow">
 
                 </div>
+                <div class="arrowButton arrowButtonRight">
+                    <img class="arrowRight" alt="arrow_right" src="images/angle_right_icon.png"/>
+                </div>
             </section>
         </section>
+
         <hr/>
         <section class="paragraphOfText">
             <article id="aboutText">
@@ -346,10 +426,21 @@
                         <li><a href="#aboutText">About</a></li>
                     </ul>
                 </nav>
-                <button class="addTeacherButton button">Add teacher</button>
+                <button class="addTeacherButton button" onclick="openAddTeacherPopup()">Add teacher</button>
             </div>
         </footer>
     </section>
+    <script>
+        function openAddTeacherPopup() {
+            document.getElementById("addTeacherPopup").style.display = "block";
+            document.getElementById("formOverlay").style.display = "block";
+        }
+
+        function closeAddTeacherPopup() {
+            document.getElementById("addTeacherPopup").style.display = "none";
+            document.getElementById("formOverlay").style.display = "none";
+        }
+    </script>
 <script type="text/javascript" src="../build/app.js"></script>
 </div>
 </body>
