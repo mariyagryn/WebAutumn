@@ -49,7 +49,6 @@
             <span class="close-btn" onclick="closeAddTeacherPopup()">&times;</span>
         </div>
         <form action="#" method="post">
-            <!-- Your form fields here -->
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Enter name" required>
 
@@ -175,7 +174,7 @@
 
             <div class="roundedPhoto">
                 <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\manTeacher.jpg">
+                    <img class="personPhoto" alt="person" src="images\manTeacher.jpg" onclick="openIhorTkachuk()">
                 </div>
 
                 <article>
@@ -184,19 +183,65 @@
                     <p class="subjectText">Chemistry</p>
                     <p class="countryText">Ukraine</p>
                 </article>
+                <div class="form-container2" id="ihorTkachukPopup">
+                    <div class="form-header">
+                        <h2>Teacher Info</h2>
+                        <span class="close-btn" onclick="closeIhorTkachukPopup()">&times;</span>
+                    </div>
+                    <div class="popup-header">
+                        <div class="popup-photo">
+                            <img id="popup-photo" src="images\manTeacher.jpg">
+                        </div>
+                        <div class="popup-details">
+                            <h3 id="popup-name">Ihor Tkachuk</h3>
+                            <p id="popup-subject"><strong>Chemistry</strong></p>
+                            <p id="popup-location">Kyiv, Ukraine</p>
+                            <p id="popup-age-gender">35, Male</p>
+                            <p id="popup-email"> <a href="#">ihor_tkachuk@domain.com</a></p>
+                            <p id="popup-phone">+380964993252</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
+                    </div>
+                    <a href="#" id="toggle-map">toggle map</a>
+                </div>
             </div>
 
             <div class="roundedPhoto">
                 <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\manTeacher1.jpg">
+                    <img class="personPhoto" alt="person" src="images\manTeacher1.jpg" onclick="openPragg()">
                 </div>
 
                 <article>
                     <p class="nameText">Pragg</p>
-                    <p class="surnameText">Tkachuk</p>
+                    <p class="surnameText">Rameshbabuk</p>
                     <p class="subjectText">Chess</p>
                     <p class="countryText">India</p>
                 </article>
+                <div class="form-container2" id="Pragg">
+                    <div class="form-header">
+                        <h2>Teacher Info</h2>
+                        <span class="close-btn" onclick="closePragg()">&times;</span>
+                    </div>
+                    <div class="popup-header">
+                        <div class="popup-photo">
+                            <img id="popup-photo" src="images\manTeacher.jpg">
+                        </div>
+                        <div class="popup-details">
+                            <h3 id="popup-name">Ihor Tkachuk</h3>
+                            <p id="popup-subject"><strong>Chemistry</strong></p>
+                            <p id="popup-location">Kyiv, Ukraine</p>
+                            <p id="popup-age-gender">35, Male</p>
+                            <p id="popup-email"> <a href="#">ihor_tkachuk@domain.com</a></p>
+                            <p id="popup-phone">+380964993252</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
+                    </div>
+                    <a href="#" id="toggle-map">toggle map</a>
+                </div>
             </div>
 
             <div class="roundedPhoto">
@@ -440,6 +485,25 @@
             document.getElementById("addTeacherPopup").style.display = "none";
             document.getElementById("formOverlay").style.display = "none";
         }
+        function openIhorTkachuk() {
+            document.getElementById("ihorTkachukPopup").style.display = "block";
+            document.getElementById("formOverlay").style.display = "block";
+        }
+
+        function closeIhorTkachukPopup() {
+            document.getElementById("ihorTkachukPopup").style.display = "none";
+            document.getElementById("formOverlay").style.display = "none";
+        }
+        function openPragg() {
+            document.getElementById("ihorTkachukPopup").style.display = "block";
+            document.getElementById("formOverlay").style.display = "block";
+        }
+
+        function closePragg() {
+            document.getElementById("ihorTkachukPopup").style.display = "none";
+            document.getElementById("formOverlay").style.display = "none";
+        }
+
     </script>
 <script type="text/javascript" src="../build/app.js"></script>
 </div>
