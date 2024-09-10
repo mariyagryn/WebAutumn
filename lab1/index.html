@@ -190,21 +190,21 @@
                     </div>
                     <div class="popup-header">
                         <div class="popup-photo">
-                            <img id="popup-photo" src="images\manTeacher.jpg">
+                            <img class="popup-photo" src="images\manTeacher.jpg">
                         </div>
                         <div class="popup-details">
-                            <h3 id="popup-name">Ihor Tkachuk</h3>
-                            <p id="popup-subject"><strong>Chemistry</strong></p>
-                            <p id="popup-location">Kyiv, Ukraine</p>
-                            <p id="popup-age-gender">35, Male</p>
-                            <p id="popup-email"> <a href="#">ihor_tkachuk@domain.com</a></p>
-                            <p id="popup-phone">+380964993252</p>
+                            <h3 class="popup-name">Ihor Tkachuk</h3>
+                            <h5 class="popup-subject"><strong>Chemistry</strong></h5>
+                            <p class="popup-location">Kyiv, Ukraine</p>
+                            <p class="popup-age-gender">35, Male</p>
+                            <p class="popup-email"> <a href="#">ihor_tkachuk@domain.com</a></p>
+                            <p class="popup-phone">+380964993252</p>
                         </div>
                     </div>
                     <div class="popup-description">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
                     </div>
-                    <a href="#" id="toggle-map">toggle map</a>
+                    <a href="#" class="toggle-map">toggle map</a>
                 </div>
             </div>
 
@@ -226,27 +226,27 @@
                     </div>
                     <div class="popup-header">
                         <div class="popup-photo">
-                            <img id="popup-photo" src="images\manTeacher.jpg">
+                            <img class="popup-photo" src="images\manTeacher1.jpg">
                         </div>
                         <div class="popup-details">
-                            <h3 id="popup-name">Ihor Tkachuk</h3>
-                            <p id="popup-subject"><strong>Chemistry</strong></p>
-                            <p id="popup-location">Kyiv, Ukraine</p>
-                            <p id="popup-age-gender">35, Male</p>
-                            <p id="popup-email"> <a href="#">ihor_tkachuk@domain.com</a></p>
-                            <p id="popup-phone">+380964993252</p>
+                            <h3 class="popup-name">Pragg Rameshbabuk</h3>
+                            <h5 class="popup-subject"><strong>Chess</strong></h5>
+                            <p class="popup-location">Mumbai, India</p>
+                            <p class="popup-age-gender">40, Male</p>
+                            <p class="popup-email"> <a href="#">pragg_rameshbabuk@domain.com</a></p>
+                            <p class="popup-phone">+910964993252</p>
                         </div>
                     </div>
                     <div class="popup-description">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
                     </div>
-                    <a href="#" id="toggle-map">toggle map</a>
+                    <a href="#" class="toggle-map">toggle map</a>
                 </div>
             </div>
 
             <div class="roundedPhoto">
                 <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\womanTeacher3.jpg">
+                    <img class="personPhoto" alt="person" src="images\womanTeacher3.jpg" onclick="openFloor()">
                 </div>
                 <img class="star" alt="star" src="images\star.png"></img>
 
@@ -257,11 +257,34 @@
                     <p class="subjectText">Vocal</p>
                     <p class="countryText">Denmark</p>
                 </article>
+                <div class="form-container2" id="Floor">
+                    <div class="form-header">
+                        <h2>Teacher Info</h2>
+                        <span class="close-btn" onclick="closeFloor()">&times;</span>
+                    </div>
+                    <div class="popup-header">
+                        <div class="popup-photo">
+                            <img class="popup-photo" src="images\womanTeacher3.jpg">
+                        </div>
+                        <div class="popup-details">
+                            <h3 class="popup-name">Floor Jansen</h3>
+                            <h5 class="popup-subject"><strong>Vocal</strong></h5>
+                            <p class="popup-location">Copenhahen, Denmark</p>
+                            <p class="popup-age-gender">28, Female</p>
+                            <p class="popup-email"> <a href="#">floor_jansen@domain.com</a></p>
+                            <p class="popup-phone">+450964993252</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
+                    </div>
+                    <a href="#" class="toggle-map">toggle map</a>
+                </div>
             </div>
 
             <div class="roundedPhoto">
                 <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\manTeacher2.jpg">
+                    <img class="personPhoto" alt="person" src="images\manTeacher2.jpg" onclick="openJohn()">
                 </div>
 
 
@@ -271,11 +294,34 @@
                     <p class="subjectText">Computer Science</p>
                     <p class="countryText">Belgium</p>
                 </article>
+                <div class="form-container2" id="JohnBurke">
+                    <div class="form-header">
+                        <h2>Teacher Info</h2>
+                        <span class="close-btn" onclick="closeJohn()">&times;</span>
+                    </div>
+                    <div class="popup-header">
+                        <div class="popup-photo">
+                            <img class="popup-photo" src="images\manTeacher2.jpg">
+                        </div>
+                        <div class="popup-details">
+                            <h3 class="popup-name">John Burke</h3>
+                            <h5 class="popup-subject"><strong>Computer Science</strong></h5>
+                            <p class="popup-location">Bruseul, Belgium</p>
+                            <p class="popup-age-gender">32, Male</p>
+                            <p class="popup-email"> <a href="#">john_burke@domain.com</a></p>
+                            <p class="popup-phone">+90964993252</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
+                    </div>
+                    <a href="#" class="toggle-map">toggle map</a>
+                </div>
             </div>
 
             <div class="roundedPhoto">
                 <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\womanTeacher2.jpg">
+                    <img class="personPhoto" alt="person" src="images\womanTeacher2.jpg" onclick="openAri()">
                 </div>
                 <img class="star" alt="star" src="images\star.png"></img>
 
@@ -286,11 +332,34 @@
                     <p class="subjectText">Biology</p>
                     <p class="countryText">China</p>
                 </article>
+                <div class="form-container2" id="AriTang">
+                    <div class="form-header">
+                        <h2>Teacher Info</h2>
+                        <span class="close-btn" onclick="closeAri()">&times;</span>
+                    </div>
+                    <div class="popup-header">
+                        <div class="popup-photo">
+                            <img class="popup-photo" src="images\womanTeacher3.jpg">
+                        </div>
+                        <div class="popup-details">
+                            <h3 class="popup-name">Ari Tang</h3>
+                            <h5 class="popup-subject"><strong>Biology</strong></h5>
+                            <p class="popup-location">Pekin, China</p>
+                            <p class="popup-age-gender">35, Female</p>
+                            <p class="popup-email"> <a href="#">ari_tang@domain.com</a></p>
+                            <p class="popup-phone">+40964993252</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
+                    </div>
+                    <a href="#" class="toggle-map">toggle map</a>
+                </div>
             </div>
 
             <div class="roundedPhoto">
                 <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\womanTeacher.jpg">
+                    <img class="personPhoto" alt="person" src="images\womanTeacher.jpg" onclick="openRachel()">
                 </div>
 
                 <article>
@@ -299,10 +368,33 @@
                     <p class="subjectText">Medicine</p>
                     <p class="countryText">UK</p>
                 </article>
+                <div class="form-container2" id="RachelAn">
+                    <div class="form-header">
+                        <h2>Teacher Info</h2>
+                        <span class="close-btn" onclick="closeRachel()">&times;</span>
+                    </div>
+                    <div class="popup-header">
+                        <div class="popup-photo">
+                            <img class="popup-photo" src="images\womanTeacher.jpg">
+                        </div>
+                        <div class="popup-details">
+                            <h3 class="popup-name">Rachel Andrew</h3>
+                            <h5 class="popup-subject"><strong>Medicine</strong></h5>
+                            <p class="popup-location">London, UK</p>
+                            <p class="popup-age-gender">45, Female</p>
+                            <p class="popup-email"> <a href="#">rachel_andrew@domain.com</a></p>
+                            <p class="popup-phone">+90964993252</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
+                    </div>
+                    <a href="#" class="toggle-map">toggle map</a>
+                </div>
             </div>
 
             <div class="roundedPhoto">
-                <div class="noPhoto">
+                <div class="noPhoto" onclick="openAnna()">
                     <p>A.M</p>
                 </div>
                 <article>
@@ -311,10 +403,35 @@
                     <p class="subjectText">Chess</p>
                     <p class="countryText">Belarus</p>
                 </article>
+                <div class="form-container2" id="AnnaMu">
+                    <div class="form-header">
+                        <h2>Teacher Info</h2>
+                        <span class="close-btn" onclick="closeAnna()">&times;</span>
+                    </div>
+                    <div class="popup-header">
+                        <div class="popup-photo">
+                            <img class="popup-photo" ><div class="noPhoto">
+                            <p>A.M</p>
+                        </div>
+                        </div>
+                        <div class="popup-details">
+                            <h3 class="popup-name">Anna Muzuchuk</h3>
+                            <h5 class="popup-subject"><strong>Chess</strong></h5>
+                            <p class="popup-location">Minsk, Belarus</p>
+                            <p class="popup-age-gender">20, Female</p>
+                            <p class="popup-email"> <a href="#">anna_muz@domain.com</a></p>
+                            <p class="popup-phone">+90964993252</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
+                    </div>
+                    <a href="#" class="toggle-map">toggle map</a>
+                </div>
             </div>
 
             <div class="roundedPhoto">
-                <div class="noPhoto">
+                <div class="noPhoto" onclick="openRadoslaw()">
                     <p>R.L</p>
                 </div>
                 <article>
@@ -323,6 +440,31 @@
                     <p class="subjectText">Physics</p>
                     <p class="countryText">Poland</p>
                 </article>
+                <div class="form-container2" id="Radoslaw">
+                    <div class="form-header">
+                        <h2>Teacher Info</h2>
+                        <span class="close-btn" onclick="closeRadoslaw()">&times;</span>
+                    </div>
+                    <div class="popup-header">
+                        <div class="popup-photo">
+                            <img class="popup-photo" ><div class="noPhoto">
+                            <p>R.L</p>
+                        </div>
+                        </div>
+                        <div class="popup-details">
+                            <h3 class="popup-name">Radoslaw Ljuboevic</h3>
+                            <h5 class="popup-subject"><strong>Physics</strong></h5>
+                            <p class="popup-location">Krakow, Poland</p>
+                            <p class="popup-age-gender">20, Male</p>
+                            <p class="popup-email"> <a href="#">rados_lj@domain.com</a></p>
+                            <p class="popup-phone">+90964993252</p>
+                        </div>
+                    </div>
+                    <div class="popup-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
+                    </div>
+                    <a href="#" class="toggle-map">toggle map</a>
+                </div>
             </div>
 
         </section>
@@ -495,12 +637,67 @@
             document.getElementById("formOverlay").style.display = "none";
         }
         function openPragg() {
-            document.getElementById("ihorTkachukPopup").style.display = "block";
+            document.getElementById("Pragg").style.display = "block";
             document.getElementById("formOverlay").style.display = "block";
         }
 
         function closePragg() {
-            document.getElementById("ihorTkachukPopup").style.display = "none";
+            document.getElementById("Pragg").style.display = "none";
+            document.getElementById("formOverlay").style.display = "none";
+        }
+        function openFloor() {
+            document.getElementById("Floor").style.display = "block";
+            document.getElementById("formOverlay").style.display = "block";
+        }
+
+        function closeFloor() {
+            document.getElementById("Floor").style.display = "none";
+            document.getElementById("formOverlay").style.display = "none";
+        }
+        function openJohn() {
+            document.getElementById("JohnBurke").style.display = "block";
+            document.getElementById("formOverlay").style.display = "block";
+        }
+
+        function closeJohn() {
+            document.getElementById("JohnBurke").style.display = "none";
+            document.getElementById("formOverlay").style.display = "none";
+        }
+        function openAri() {
+            document.getElementById("AriTang").style.display = "block";
+            document.getElementById("formOverlay").style.display = "block";
+        }
+
+        function closeAri() {
+            document.getElementById("AriTang").style.display = "none";
+            document.getElementById("formOverlay").style.display = "none";
+        }
+        function openRachel() {
+            document.getElementById("RachelAn").style.display = "block";
+            document.getElementById("formOverlay").style.display = "block";
+        }
+
+        function closeRachel() {
+            document.getElementById("RachelAn").style.display = "none";
+            document.getElementById("formOverlay").style.display = "none";
+        }
+
+        function openAnna() {
+            document.getElementById("AnnaMu").style.display = "block";
+            document.getElementById("formOverlay").style.display = "block";
+        }
+
+        function closeAnna() {
+            document.getElementById("AnnaMu").style.display = "none";
+            document.getElementById("formOverlay").style.display = "none";
+        }
+        function openRadoslaw() {
+            document.getElementById("Radoslaw").style.display = "block";
+            document.getElementById("formOverlay").style.display = "block";
+        }
+
+        function closeRadoslaw() {
+            document.getElementById("Radoslaw").style.display = "none";
             document.getElementById("formOverlay").style.display = "none";
         }
 
