@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-UA">
 
 <head itemscope itemtype="http://schema.org/WebSite">
 
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-comsearchButtonpatible" content="ie=edge">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,12 +12,10 @@
 
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="scss/style.css">
-
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
 <div class="bodyDiv">
-    <div class="form-overlay" id="formOverlay" onclick="closeAddTeacherPopup()"></div>
     <header>
         <div class="topOfHeader">
             <h1>Teachinder</h1>
@@ -37,95 +35,13 @@
                     <li><a href="#aboutText">About</a></li>
                 </ul>
             </nav>
-            <button class="addTeacherButton button" onclick="openAddTeacherPopup()">
-                Add teacher
+            <button class="addTeacherButton button">
+                <a href="#addTeacherPopupBack">Add teacher</a>
             </button>
         </div>
 
     </header>
-    <div class="form-container" id="addTeacherPopup">
-        <div class="form-header">
-            <h2>Add Teacher</h2>
-            <span class="close-btn" onclick="closeAddTeacherPopup()">&times;</span>
-        </div>
-        <form action="#" method="post">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter name" required>
-
-            <label for="speciality">Speciality</label>
-            <select id="speciality" name="speciality">
-                <option value="mathematics">Mathematics</option>
-                <option value="computerscience">Computer Science</option>
-                <option value="physics">Physics</option>
-                <option value="chemistry">Chemistry</option>
-                <option value="biology">Biology</option>
-            </select>
-
-            <div class="row">
-                <div class="column">
-                    <label for="country" style="margin-bottom: -7%;">Country</label>
-                    <select id="country" name="country">
-                        <option value="ukraine">Ukraine</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Ireland">Ireland</option>
-                        <option value="Australia">Australia</option>
-                        <option value="United States">United States</option>
-                        <option value="Turkey">Turkey</option>
-                        <option value="Finland">Finland</option>
-                        <option value="UK">UK</option>
-                        <option value="Poland">Poland</option>
-                        <option value="India">India</option>
-                    </select>
-                </div>
-
-                <div class="column">
-                    <label for="city" style="margin-bottom: -7%;">City</label>
-                    <input type="text" id="city" name="city" placeholder="">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="column">
-                    <label for="email" style="margin-bottom: -7%;">Email</label>
-                    <input type="email" id="email" name="email" placeholder="">
-                </div>
-
-                <div class="column">
-                    <label for="phone" style="margin-bottom: -7%;">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="column">
-                    <label for="dob" style="margin-bottom: -7%;">Date of birth</label>
-                    <input type="date" id="dob" name="dob">
-                </div>
-
-                <div class="column">
-
-                </div>
-            </div>
-
-
-            <div class="radio-group">
-                <label>Sex</label>
-                <label><input type="radio" name="sex" value="male"> Male</label>
-                <label><input type="radio" name="sex" value="female"> Female</label>
-            </div>
-
-            <div class="background-color-group">
-                <label for="bg-color">Background color</label>
-                <input type="color" id="bg-color" name="bg-color">
-            </div>
-
-            <label for="notes">Notes (optional)</label>
-            <textarea id="notes" name="notes" placeholder="Enter notes"></textarea>
-
-            <button type="submit" class="addTeacherButton2 button">Add</button>
-        </form>
-    </div>
-    <hr>
+    <hr/>
     <section class="topTeachersContainer">
         <a href="#teacherInfoPopup">
             <h2 id="topTeachersText">Top Teachers</h2>
@@ -133,9 +49,9 @@
 
         <section class="filtersContainer">
             <div>
-                <label for="ageSelect" style="margin-bottom: 6.5%">Age</label>
+                <label for="ageSelect">Age</label>
                 <select name="age" id="ageSelect">
-                    <option value="all">18-31</option>
+                    <option value="all">all</option>
                     <option value="18-31">18-31</option>
                     <option value="18<"> 18&lt; </option>
                     <option value=">31"> &gt;31</option>
@@ -143,25 +59,22 @@
             </div>
 
             <div>
-                <label for="regionSelect" style="margin-bottom: 5%">Region</label>
+                <label for="regionSelect">Region</label>
                 <select name="region" id="regionSelect">
-                    <option value="all">Europe</option>
+                    <option value="all">all</option>
                     <option value="Germany">Germany</option>
                     <option value="Ireland">Ireland</option>
                     <option value="Australia">Australia</option>
                     <option value="United States">United States</option>
                     <option value="Turkey">Turkey</option>
                     <option value="Finland">Finland</option>
-                    <option value="Ukraine">Ukraine</option>
-                    <option value="Poland">Poland</option>
-                    <option value="India">India</option>
                 </select>
             </div>
 
             <div>
-                <label for="sexSelect" style="margin-bottom: 6.5%">Sex</label>
+                <label for="sexSelect">Sex</label>
                 <select name="sex" id="sexSelect">
-                    <option value="all">Male</option>
+                    <option value="all">all</option>
                     <option value="male">male</option>
                     <option value="female">female</option>
                 </select>
@@ -177,14 +90,19 @@
                 <label for="onlyFavorites">Only favorites</label>
             </div>
 
+
         </section>
-        <br>
+        <section>
+
+        </section>
         <section class="teachersCardsContainer" id = "teachersCardsContainer">
 
             <div class="roundedPhoto">
                 <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\manTeacher.jpg" onclick="openIhorTkachuk()">
+                    <img class="personPhoto" alt="person" src="images\manTeacher.jpg">
                 </div>
+                <img class="star" alt="star" src="images\star.png"></img>
+
 
                 <article>
                     <p class="nameText">Ihor</p>
@@ -192,641 +110,235 @@
                     <p class="subjectText">Chemistry</p>
                     <p class="countryText">Ukraine</p>
                 </article>
-                <div class="form-container2" id="ihorTkachukPopup">
-                    <div class="form-header">
-                        <h2>Teacher Info</h2>
-                        <span class="close-btn" onclick="closeIhorTkachukPopup()">&times;</span>
-                    </div>
-                    <div class="popup-header">
-                        <div class="popup-photo">
-                            <img class="popup-photo" src="images\manTeacher.jpg">
-                        </div>
-                        <div class="popup-details">
-                            <h3 class="popup-name">Ihor Tkachuk</h3>
-                            <h5 class="popup-subject"><strong>Chemistry</strong></h5>
-                            <p class="popup-location">Kyiv, Ukraine</p>
-                            <p class="popup-age-gender">35, Male</p>
-                            <p class="popup-email"> <a href="#">ihor_tkachuk@domain.com</a></p>
-                            <p class="popup-phone">+380964993252</p>
-                        </div>
-                    </div>
-                    <div class="popup-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
-                    </div>
-                    <a href="#" class="toggle-map">toggle map</a>
-                </div>
             </div>
 
             <div class="roundedPhoto">
-                <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\manTeacher1.jpg" onclick="openPragg()">
-                </div>
-
-                <article>
-                    <p class="nameText">Pragg</p>
-                    <p class="surnameText">Rameshbabuk</p>
-                    <p class="subjectText">Chess</p>
-                    <p class="countryText">India</p>
-                </article>
-                <div class="form-container2" id="Pragg">
-                    <div class="form-header">
-                        <h2>Teacher Info</h2>
-                        <span class="close-btn" onclick="closePragg()">&times;</span>
-                    </div>
-                    <div class="popup-header">
-                        <div class="popup-photo">
-                            <img class="popup-photo" src="images\manTeacher1.jpg">
-                        </div>
-                        <div class="popup-details">
-                            <h3 class="popup-name">Pragg Rameshbabuk</h3>
-                            <h5 class="popup-subject"><strong>Chess</strong></h5>
-                            <p class="popup-location">Mumbai, India</p>
-                            <p class="popup-age-gender">40, Male</p>
-                            <p class="popup-email"> <a href="#">pragg_rameshbabuk@domain.com</a></p>
-                            <p class="popup-phone">+910964993252</p>
-                        </div>
-                    </div>
-                    <div class="popup-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
-                    </div>
-                    <a href="#" class="toggle-map">toggle map</a>
-                </div>
-            </div>
-
-            <div class="roundedPhoto">
-                <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\womanTeacher3.jpg" onclick="openFloor()">
-                </div>
-                <img class="star" alt="star" src="images\star.png"></img>
-
-
-                <article>
-                    <p class="nameText">Floor</p>
-                    <p class="surnameText">Jansen</p>
-                    <p class="subjectText">Vocal</p>
-                    <p class="countryText">Denmark</p>
-                </article>
-                <div class="form-container2" id="Floor">
-                    <div class="form-header">
-                        <h2>Teacher Info</h2>
-                        <span class="close-btn" onclick="closeFloor()">&times;</span>
-                    </div>
-                    <div class="popup-header">
-                        <div class="popup-photo">
-                            <img class="popup-photo" src="images\womanTeacher3.jpg">
-                        </div>
-                        <div class="popup-details">
-                            <h3 class="popup-name">Floor Jansen</h3>
-                            <h5 class="popup-subject"><strong>Vocal</strong></h5>
-                            <p class="popup-location">Copenhahen, Denmark</p>
-                            <p class="popup-age-gender">28, Female</p>
-                            <p class="popup-email"> <a href="#">floor_jansen@domain.com</a></p>
-                            <p class="popup-phone">+450964993252</p>
-                        </div>
-                    </div>
-                    <div class="popup-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
-                    </div>
-                    <a href="#" class="toggle-map">toggle map</a>
-                </div>
-            </div>
-
-            <div class="roundedPhoto">
-                <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\manTeacher2.jpg" onclick="openJohn()">
-                </div>
-
-
-                <article>
-                    <p class="nameText">John</p>
-                    <p class="surnameText">Burke</p>
-                    <p class="subjectText">Computer Science</p>
-                    <p class="countryText">Belgium</p>
-                </article>
-                <div class="form-container2" id="JohnBurke">
-                    <div class="form-header">
-                        <h2>Teacher Info</h2>
-                        <span class="close-btn" onclick="closeJohn()">&times;</span>
-                    </div>
-                    <div class="popup-header">
-                        <div class="popup-photo">
-                            <img class="popup-photo" src="images\manTeacher2.jpg">
-                        </div>
-                        <div class="popup-details">
-                            <h3 class="popup-name">John Burke</h3>
-                            <h5 class="popup-subject"><strong>Computer Science</strong></h5>
-                            <p class="popup-location">Bruseul, Belgium</p>
-                            <p class="popup-age-gender">32, Male</p>
-                            <p class="popup-email"> <a href="#">john_burke@domain.com</a></p>
-                            <p class="popup-phone">+90964993252</p>
-                        </div>
-                    </div>
-                    <div class="popup-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
-                    </div>
-                    <a href="#" class="toggle-map">toggle map</a>
-                </div>
-            </div>
-
-            <div class="roundedPhoto">
-                <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\womanTeacher2.jpg" onclick="openAri()">
-                </div>
-                <img class="star" alt="star" src="images\star.png"></img>
-
-
-                <article>
-                    <p class="nameText">Ari</p>
-                    <p class="surnameText">Tang</p>
-                    <p class="subjectText">Biology</p>
-                    <p class="countryText">China</p>
-                </article>
-                <div class="form-container2" id="AriTang">
-                    <div class="form-header">
-                        <h2>Teacher Info</h2>
-                        <span class="close-btn" onclick="closeAri()">&times;</span>
-                    </div>
-                    <div class="popup-header">
-                        <div class="popup-photo">
-                            <img class="popup-photo" src="images\womanTeacher3.jpg">
-                        </div>
-                        <div class="popup-details">
-                            <h3 class="popup-name">Ari Tang</h3>
-                            <h5 class="popup-subject"><strong>Biology</strong></h5>
-                            <p class="popup-location">Pekin, China</p>
-                            <p class="popup-age-gender">35, Female</p>
-                            <p class="popup-email"> <a href="#">ari_tang@domain.com</a></p>
-                            <p class="popup-phone">+40964993252</p>
-                        </div>
-                    </div>
-                    <div class="popup-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
-                    </div>
-                    <a href="#" class="toggle-map">toggle map</a>
-                </div>
-            </div>
-
-            <div class="roundedPhoto">
-                <div class="photo">
-                    <img class="personPhoto" alt="person" src="images\womanTeacher.jpg" onclick="openRachel()">
-                </div>
-
-                <article>
-                    <p class="nameText">Rachel</p>
-                    <p class="surnameText">Andrew</p>
-                    <p class="subjectText">Medicine</p>
-                    <p class="countryText">UK</p>
-                </article>
-                <div class="form-container2" id="RachelAn">
-                    <div class="form-header">
-                        <h2>Teacher Info</h2>
-                        <span class="close-btn" onclick="closeRachel()">&times;</span>
-                    </div>
-                    <div class="popup-header">
-                        <div class="popup-photo">
-                            <img class="popup-photo" src="images\womanTeacher.jpg">
-                        </div>
-                        <div class="popup-details">
-                            <h3 class="popup-name">Rachel Andrew</h3>
-                            <h5 class="popup-subject"><strong>Medicine</strong></h5>
-                            <p class="popup-location">London, UK</p>
-                            <p class="popup-age-gender">45, Female</p>
-                            <p class="popup-email"> <a href="#">rachel_andrew@domain.com</a></p>
-                            <p class="popup-phone">+90964993252</p>
-                        </div>
-                    </div>
-                    <div class="popup-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
-                    </div>
-                    <a href="#" class="toggle-map">toggle map</a>
-                </div>
-            </div>
-
-            <div class="roundedPhoto">
-                <div class="noPhoto" onclick="openAnna()">
-                    <p>A.M</p>
-                </div>
-                <article>
-                    <p class="nameText">Anna</p>
-                    <p class="surnameText">Muzuchuk</p>
-                    <p class="subjectText">Chess</p>
-                    <p class="countryText">Belarus</p>
-                </article>
-                <div class="form-container2" id="AnnaMu">
-                    <div class="form-header">
-                        <h2>Teacher Info</h2>
-                        <span class="close-btn" onclick="closeAnna()">&times;</span>
-                    </div>
-                    <div class="popup-header">
-                        <div class="popup-photo">
-                            <img class="popup-photo" ><div class="noPhoto">
-                            <p>A.M</p>
-                        </div>
-                        </div>
-                        <div class="popup-details">
-                            <h3 class="popup-name">Anna Muzuchuk</h3>
-                            <h5 class="popup-subject"><strong>Chess</strong></h5>
-                            <p class="popup-location">Minsk, Belarus</p>
-                            <p class="popup-age-gender">20, Female</p>
-                            <p class="popup-email"> <a href="#">anna_muz@domain.com</a></p>
-                            <p class="popup-phone">+90964993252</p>
-                        </div>
-                    </div>
-                    <div class="popup-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
-                    </div>
-                    <a href="#" class="toggle-map">toggle map</a>
-                </div>
-            </div>
-
-            <div class="roundedPhoto">
-                <div class="noPhoto" onclick="openRadoslaw()">
+                <div class="noPhoto">
                     <p>R.L</p>
                 </div>
                 <article>
-                    <p class="nameText">Radoslaw</p>
-                    <p class="surnameText">Ljuboevic</p>
-                    <p class="subjectText">Physics</p>
-                    <p class="countryText">Poland</p>
+                    <p class="nameText">Ihor</p>
+                    <p class="surnameText">Tkachuk</p>
+                    <p class="subjectText">Chemistry</p>
+                    <p class="countryText">Ukraine</p>
                 </article>
-                <div class="form-container2" id="Radoslaw">
-                    <div class="form-header">
-                        <h2>Teacher Info</h2>
-                        <span class="close-btn" onclick="closeRadoslaw()">&times;</span>
-                    </div>
-                    <div class="popup-header">
-                        <div class="popup-photo">
-                            <img class="popup-photo" ><div class="noPhoto">
-                            <p>R.L</p>
-                        </div>
-                        </div>
-                        <div class="popup-details">
-                            <h3 class="popup-name">Radoslaw Ljuboevic</h3>
-                            <h5 class="popup-subject"><strong>Physics</strong></h5>
-                            <p class="popup-location">Krakow, Poland</p>
-                            <p class="popup-age-gender">20, Male</p>
-                            <p class="popup-email"> <a href="#">rados_lj@domain.com</a></p>
-                            <p class="popup-phone">+90964993252</p>
-                        </div>
-                    </div>
-                    <div class="popup-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...</p>
-                    </div>
-                    <a href="#" class="toggle-map">toggle map</a>
-                </div>
             </div>
-
         </section>
-
-        <hr>
-        <section>
-            <h2 id="statisticsText">Statistics</h2>
-            <table class="statisticsTable" id="statisticsTable">
-                <thead>
-                <tr class="trNames">
-                    <th style="padding-left: 3%;">Name
-                        <span class="tableArrow">↓</span>
-                    </th>
-                    <th>Speciality
-                        <span class="tableArrow">↓</span>
-                    </th>
-                    <th style="padding-left: 8%;">Age
-                        <span class="tableArrow">↓</span>
-                    </th>
-                    <th style="padding-left: 6.7%;">Gender
-                        <span class="tableArrow">↓</span>
-                    </th>
-                    <th style="padding-left: 5%;">Nationality
-                        <span class="tableArrow">↓</span>
-                    </th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td>Daisy Alexander</td>
-                    <td>Chemistry</td>
-                    <td>28</td>
-                    <td>Female</td>
-                    <td>Vietnam</td>
-                </tr>
-                <tr>
-                    <td>Julia Bradley</td>
-                    <td>Math</td>
-                    <td>26</td>
-                    <td>Female</td>
-                    <td>USA</td>
-                </tr>
-                <tr>
-                    <td>Rita Hart</td>
-                    <td>Art</td>
-                    <td>41</td>
-                    <td>Female</td>
-                    <td>Ireland</td>
-                </tr>
-                <tr>
-                    <td>Jonathan Jacobs</td>
-                    <td>Math</td>
-                    <td>32</td>
-                    <td>Male</td>
-                    <td>England</td>
-                </tr>
-                <tr>
-                    <td>Nathaniel White</td>
-                    <td>Computer Science</td>
-                    <td>37</td>
-                    <td>Male</td>
-                    <td>Austria</td>
-                </tr>
-                <tr>
-                    <td>Frank Medina</td>
-                    <td>English</td>
-                    <td>43</td>
-                    <td>Male</td>
-                    <td>USA</td>
-                </tr>
-                <tr>
-                    <td>Ella Curtis</td>
-                    <td>Chess</td>
-                    <td>34</td>
-                    <td>Female</td>
-                    <td>USA</td>
-                </tr>
-                <tr>
-                    <td>Claire Simmons</td>
-                    <td>Art</td>
-                    <td>38</td>
-                    <td>Female</td>
-                    <td>Netherlands</td>
-                </tr>
-                <tr>
-                    <td>Benjamin Knight</td>
-                    <td>Biology</td>
-                    <td>44</td>
-                    <td>Male</td>
-                    <td>Scotland</td>
-                </tr>
-                <tr>
-                    <td>Norma Rose</td>
-                    <td>Statistics</td>
-                    <td>36</td>
-                    <td>Female</td>
-                    <td>France</td>
-                </tr>
-                </tbody>
-            </table>
-            <nav>
-                <ol class="underTableList">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>...</li>
-                    <li>Last</li>
-                </ol>
-            </nav>
-        </section>
-        <hr/>
-        <section>
-            <h2 id="favoritesText">Favorites</h2>
-            <section id="carouselOfTeacherCards">
-                <div class="arrowButton arrowButtonLeft">
-                    <img class="arrowLeft" alt="arrow_left" src="images/angle_left_icon.png"/>
-                </div>
-                <div class="overflow">
-
-
-                    <div class="roundedPhoto">
-                        <div class="photo">
-                            <img class="personPhoto" alt="person" src="images/manTeacher.jpg">
-                        </div>
-                        <article>
-                            <p class="nameText">Ihor</p>
-                            <p class="surnameText">Tkachuk</p>
-                            <p class="countryText">Ukraine</p>
-                        </article>
-                    </div>
-
-
-                    <div class="roundedPhoto">
-                        <div class="photo">
-                            <img class="personPhoto" alt="person" src="images/womanTeacher3.jpg">
-                        </div>
-                        <article>
-                            <p class="nameText">Floor</p>
-                            <p class="surnameText">Jansen</p>
-                            <p class="countryText">Denmark</p>
-                        </article>
-                    </div>
-
-
-                    <div class="roundedPhoto">
-                        <div class="photo">
-                            <img class="personPhoto" alt="person" src="images/manTeacher2.jpg">
-                        </div>
-                        <article>
-                            <p class="nameText">John</p>
-                            <p class="surnameText">Burke</p>
-                            <p class="countryText">Belgium</p>
-                        </article>
-                    </div>
-
-
-                    <div class="roundedPhoto">
-                        <div class="noPhoto">
-                            <p>A.M</p>
-                        </div>
-                        <article>
-                            <p class="nameText">Anna</p>
-                            <p class="surnameText">Muzuchuk</p>
-                            <p class="countryText">Belarus</p>
-                        </article>
-                    </div>
-
-
-                    <div class="roundedPhoto">
-                        <div class="photo">
-                            <img class="personPhoto" alt="person" src="images/womanTeacher2.jpg">
-                        </div>
-                        <article>
-                            <p class="nameText">Ari</p>
-                            <p class="surnameText">Tang</p>
-                            <p class="countryText">China</p>
-                        </article>
-                    </div>
-
-
-                    <div class="roundedPhoto">
-                        <div class="photo">
-                            <img class="personPhoto" alt="person" src="images/manTeacher1.jpg">
-                        </div>
-                        <article>
-                            <p class="nameText">Pragg</p>
-                            <p class="surnameText">Rameshbabuk</p>
-                            <p class="countryText">India</p>
-                        </article>
-                    </div>
-
-
-                    <div class="roundedPhoto">
-                        <div class="noPhoto">
-                            <p>R.L</p>
-                        </div>
-                        <article>
-                            <p class="nameText">Radoslaw</p>
-                            <p class="surnameText">Ljuboevic</p>
-                            <p class="countryText">Poland</p>
-                        </article>
-                    </div>
-
-
-                    <div class="roundedPhoto">
-                        <div class="photo">
-                            <img class="personPhoto" alt="person" src="images/womanTeacher.jpg">
-                        </div>
-                        <article>
-                            <p class="nameText">Rachel</p>
-                            <p class="surnameText">Andrew</p>
-                            <p class="countryText">UK</p>
-                        </article>
-                    </div>
-                </div>
-                <div class="arrowButton arrowButtonRight">
-                    <img class="arrowRight" alt="arrow_right" src="images/angle_right_icon.png"/>
-                </div>
-            </section>
-        </section>
-
-        <hr/>
-        <section class="paragraphOfText">
-            <article id="aboutText">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque facere, hic impedit itaque molestiae sit tempore? Ea in mollitia natus rerum voluptatis. Ea ex exceptionuri facere tempora.Aliquid asperiores hic impedit iusto natus quaerat ratione sit? Culpa iusto optio voluptas voluptate. Enim eveniet fugit iure maiores molestiae, praesentium quia.
-
-                <br></br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eligendi illum in inventore ipsum odio officiis omnis quisquam sed tempora?
-                <br></br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque esse expedita id iusto mollitia, odit sint ullam veritatis vero?
-            </article></section>
-        <footer>
-
-            <div class="footerContainer">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#topTeachersText">Teachers</a></li>
-                        <li><a href="#statisticsText">Statistics</a></li>
-                        <li><a href="#favoritesText">Favorites</a></li>
-                        <li><a href="#aboutText">About</a></li>
-                    </ul>
-                </nav>
-                <button class="addTeacherButton button" onclick="openAddTeacherPopup()">Add teacher</button>
-            </div>
-        </footer>
+        <section><button id="tenMoreButton" class="button">10 more</button></section>
     </section>
-    <script>
-        function openAddTeacherPopup() {
-            document.getElementById("addTeacherPopup").style.display = "block";
-            document.getElementById("formOverlay").style.display = "block";
-        }
+    <hr/>
+    <section>
+        <h2 id="statisticsText">Statistics</h2>
+        <table class="statisticsTable" id="statisticsTable">
+            <thead>
+            <tr>
+                <th id="nameHeader">Name
+                    <span class="tableArrow">↓</span>
+                </th>
+                <th id="specialityHeader">Speciality
+                    <span class="tableArrow">↓</span>
+                </th>
+                <th id="ageHeader">Age
+                    <span class="tableArrow">↓</span>
+                </th>
+                <th id="genderHeader">Gender
+                    <span class="tableArrow">↓</span>
+                </th>
+                <th id="nationalityHeader">Nationality
+                    <span class="tableArrow">↓</span>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
 
-        function closeAddTeacherPopup() {
-            document.getElementById("addTeacherPopup").style.display = "none";
-            document.getElementById("formOverlay").style.display = "none";
-        }
-        function openIhorTkachuk() {
-            document.getElementById("ihorTkachukPopup").style.display = "block";
-            document.getElementById("formOverlay").style.display = "block";
-        }
+            </tbody>
+        </table>
 
-        function closeIhorTkachukPopup() {
-            document.getElementById("ihorTkachukPopup").style.display = "none";
-            document.getElementById("formOverlay").style.display = "none";
-        }
-        function openPragg() {
-            document.getElementById("Pragg").style.display = "block";
-            document.getElementById("formOverlay").style.display = "block";
-        }
+        <nav>
+            <ol class="underTableList">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>...</li>
+                <li>Last</li>
+            </ol>
+        </nav>
+    </section>
+    <hr/>
+    <section>
+        <h2 id="favoritesText">Favorites</h2>
+        <section id="carouselOfTeacherCards">
+            <div class="arrowButton arrowButtonLeft"><img class="arrowLeft" alt="arrow_left" src="images\angle_left_icon.png"/></div>
+            <div class="arrowButton arrowButtonRight"><img class="arrowRight arrow" alt="arrow_right" src="images\angle_right_icon.png"/></div>
+            <div class="overflow">
 
-        function closePragg() {
-            document.getElementById("Pragg").style.display = "none";
-            document.getElementById("formOverlay").style.display = "none";
-        }
-        function openFloor() {
-            document.getElementById("Floor").style.display = "block";
-            document.getElementById("formOverlay").style.display = "block";
-        }
+            </div>
+        </section>
+    </section>
+    <hr/>
+    <section class="paragraphOfText">
+        <article id="aboutText">
+            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+            incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+            ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            <br></br>
+            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+            <br></br>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </article></section>
+    <footer>
 
-        function closeFloor() {
-            document.getElementById("Floor").style.display = "none";
-            document.getElementById("formOverlay").style.display = "none";
-        }
-        function openJohn() {
-            document.getElementById("JohnBurke").style.display = "block";
-            document.getElementById("formOverlay").style.display = "block";
-        }
-
-        function closeJohn() {
-            document.getElementById("JohnBurke").style.display = "none";
-            document.getElementById("formOverlay").style.display = "none";
-        }
-        function openAri() {
-            document.getElementById("AriTang").style.display = "block";
-            document.getElementById("formOverlay").style.display = "block";
-        }
-
-        function closeAri() {
-            document.getElementById("AriTang").style.display = "none";
-            document.getElementById("formOverlay").style.display = "none";
-        }
-        function openRachel() {
-            document.getElementById("RachelAn").style.display = "block";
-            document.getElementById("formOverlay").style.display = "block";
-        }
-
-        function closeRachel() {
-            document.getElementById("RachelAn").style.display = "none";
-            document.getElementById("formOverlay").style.display = "none";
-        }
-
-        function openAnna() {
-            document.getElementById("AnnaMu").style.display = "block";
-            document.getElementById("formOverlay").style.display = "block";
-        }
-
-        function closeAnna() {
-            document.getElementById("AnnaMu").style.display = "none";
-            document.getElementById("formOverlay").style.display = "none";
-        }
-        function openRadoslaw() {
-            document.getElementById("Radoslaw").style.display = "block";
-            document.getElementById("formOverlay").style.display = "block";
-        }
-
-        function closeRadoslaw() {
-            document.getElementById("Radoslaw").style.display = "none";
-            document.getElementById("formOverlay").style.display = "none";
-        }
-        const arrowLeft = document.querySelector('.arrowLeft');
-        const arrowRight = document.querySelector('.arrowRight');
-        const overflow = document.querySelector('.overflow');
-
-        arrowRight.addEventListener('click', () => {
-            overflow.scrollBy({
-                left: 200,
-                behavior: 'smooth'
-            });
-        });
-
-        arrowLeft.addEventListener('click', () => {
-            overflow.scrollBy({
-                left: -200,
-                behavior: 'smooth'
-            });
-        });
-
-    </script>
-    <script src="js/FE4U-Lab2-mock.js"></script>
-    <script src="js/app.js"></script>
-
-
+        <div class="footerContainer">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#topTeachersText">Teachers</a></li>
+                    <li><a href="#statisticsText">Statistics</a></li>
+                    <li><a href="#favoritesText">Favorites</a></li>
+                    <li><a href="#aboutText">About</a></li>
+                </ul>
+            </nav>
+            <button class="addTeacherButton button">Add teacher</button>
+        </div>
+    </footer>
 </div>
+<section class="addTeacherPopupBack" id="addTeacherPopupBack">
+    <section class="addTeacherPopup">
+        <section class="popupHeader">
+
+            <h3>Add Teacher</h3>
+            <button class="closePopup" id="closePopupAddTeacher">
+                x
+            </button>
+
+        </section>
+
+        <form id="addTeacherForm" class="popupForm flexColumn" name="popupForm" method="post" action="http://localhost:3000/users">
+            <fieldset class="enterName flexColumn">
+                <label for="addName">Name</label>
+                <input type="text" class="addName" name="addName" placeholder="Enter name" required/>
+            </fieldset>
+
+            <fieldset class="flexColumn">
+                <label for="addSpeciality">Speciality</label>
+                <select name="addSpeciality" id="addSpeciality" required>
+                    <option value="math" selected>Mathematics</option>
+                    <option value="physics">Physics</option>
+                    <option value="vocal">Vocal</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="chess">Chess</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="biology">Biology</option>
+                </select>
+            </fieldset>
+            <section class="gridForm">
+                <fieldset class="flexColumn">
+                    <label for="addCountry">Country</label>
+                    <select class="addCountry" name="addCountry" required>
+                        <option value="Ukraine" selected>Ukraine</option>
+                        <option value="India">India</option>
+                        <option value="UK">UK</option>
+                        <option value="Belarus">Belarus</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="China">China</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="USA">USA</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="England">England</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Scotland">Scotland</option>
+                        <option value="France">France</option>
+                    </select>
+
+                    <label for="addCity">City</label>
+                    <input type="text" class="addCity" name="addCity"/>
+                </fieldset>
+
+                <fieldset class="flexColumn">
+                    <label for="addEmail">Email</label>
+                    <input type="email" class="addEmail" name="addEmail" required/>
+
+                    <label for="addPhone">Phone</label>
+                    <input type="tel" class="addPhone" name="addPhone" required/>
+                </fieldset>
+
+                <fieldset class="flexColumn">
+                    <label for="addDate">Date of birth</label>
+                    <input type="date" class="addDate" name="addDate" required/>
+                </fieldset>
+            </section>
+            <fieldset class="genderChoice">
+                <label>Sex</label>
+
+                <label for="male">Male</label>
+                <input type="radio" data-sex="male" name="sex" value="male"/>
+
+                <label for="female">Female</label>
+                <input type="radio" data-sex="female" name="sex" value="female"/>
+            </fieldset>
+
+            <fieldset class="genderChoice">
+                <label for="addBgColor">Background color</label>
+                <input type="color" class="addBgColor" name="addBgColor"/>
+            </fieldset>
+
+            <fieldset class="flexColumn">
+                <label for="addNotes">Notes (optional)</label>
+                <textarea class="addNotes" name="addNotes" rows="5"></textarea>
+            </fieldset>
+
+            <button id="addTeacherButtonForm" type="submit" class="addTeacherForm button" >Add</button>
+        </form>
+    </section>
+</section>
+
+<section class="teacherInfoPopupBack" id="teacherInfoPopup">
+    <section class="teacherInfoPopup">
+        <section class="popupHeader">
+            <h3>Teacher Info</h3>
+            <div class="rightUpOfInfoPopupHeader">
+                <button class="favoriteStarButton" id="favoriteStarButton"><img src="images\star-outline.svg" alt="Star Button Not Filled"></button>
+                <button class="closePopup" id="closePopupInfoTeacher">x</button>
+            </div>
+        </section>
+        <section class="photoPlusData">
+            <div><img class="teacherPhotoInfoPopup" src="images/manTeacher.jpg" alt="teacher man"/>
+            </div>
+            <article class="teacherDataPopup">
+                <h1>Ihor Tkachuk</h1>
+                <address>
+                    <p>Chemistry</p>
+                    <p>Kyiv, Ukraine</p>
+                    <p>35, Male</p>
+                    <p class="email">ihor_tkachuk@domain.com</p>
+                    <p>+380964993252</p>
+                </address>
+            </article>
+        </section>
+        <article class="dataPopUp">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque fermentum vel est quis viverra. Praesent lobortis
+                ligula eu erat cursus, eu placerat mauris tempus. Cras tincidunt
+                tempor viverra. Nulla condimentum, neque id interdum venenatis,
+                augue dui vestibulum turpis, accumsan posuere ipsum neque eget
+                massa. Maecenas porta est malesuada interdum aliquam. Donec felis
+                sem, hendrerit at vulputate vel, feugiat id ipsum. Duis auctor
+                dapibus aliquet.
+            </p>
+        </article>
+
+        <a href="" class="toggleMap">toggle map</a>
+    </section>
+</section>
+
+<script src="js/FE4U-Lab2-mock.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
