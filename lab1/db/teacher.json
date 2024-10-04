@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "full_name": "John Doe",
+      "age": 25,
+      "course": "Mathematics"
+    },
+    {
+      "id": 2,
+      "full_name": "Jane Smith",
+      "age": 30,
+      "course": "Physics"
+    }
+  ]
+}
