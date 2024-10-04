@@ -313,7 +313,9 @@ function showTeacherInfoPopup(teacher) {
     const teacherName = document.querySelector('.teacherDataPopup h1');
     const subject = document.querySelector('.teacherDataPopup p:nth-child(1)');
     const location = document.querySelector('.teacherDataPopup p:nth-child(2)');
+    location.textContent = teacher.city + ", " + teacher.country;
     const ageGender = document.querySelector('.teacherDataPopup p:nth-child(3)');
+    ageGender.textContent = `${teacher.age} years old, ${teacher.gender}`;
     const email = document.querySelector('.teacherDataPopup .email');
     const phoneNumber = document.querySelector('.teacherDataPopup p:nth-child(5)');
 
@@ -831,6 +833,29 @@ async function fetchRandomTeachers(numOfTeachers) {
 
 
 }
+function fetchUser(formatedUser) {
+    try {
+
+        // Виконання запиту за допомогою fetch
+        fetch('http://localhost:3000/users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                full_name: 'Alice Johnson',
+                age: 22,
+                course: 'Computer Science'
+            }),
+        })
+            .then(response => response.json())
+            .then(data => console.log('User added:', data))
+            .catch(error => console.error('Error:', error));
+
+    } catch (error) {
+        console.error("Все погано, Помилка при відправленні даних:", error);
+    }
+}
 function handleTenMoreButton() {
     const tenMoreButt = document.getElementById("tenMoreButton");
     tenMoreButt.addEventListener("click", () => {
@@ -847,8 +872,7 @@ window.onload = () => {
         handleSearchFieldAndButton();
         handleAddButtonForm();
         handleAddTeacherButtons();
-        handleTenMoreButton();
-        console.log(finalArray);
     });
+    handleTenMoreButton();
 };
 
